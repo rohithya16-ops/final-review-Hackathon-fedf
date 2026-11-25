@@ -1,0 +1,56 @@
+/* Eazypezy shared design language: the landing page's dark purple palette continues inside the app. */
+:root { color-scheme: dark; }
+body { background: #190D24 !important; color: #F5ECFA !important; }
+.ez-customer-shell, .ez-admin-shell, .ez-manager-shell, .ez-delivery-shell {
+  background: #190D24 !important; color: #F5ECFA !important; min-height: 100vh;
+  font-family: 'Work Sans', Arial, sans-serif !important;
+}
+.ez-customer-shell nav, .ez-admin-shell header, .ez-manager-shell nav, .ez-delivery-shell nav {
+  background: #241130 !important; color: #F5ECFA !important; border-bottom: 1px solid #4B2E62 !important;
+  box-shadow: 0 4px 24px #0005 !important;
+}
+.ez-customer-shell input, .ez-customer-shell select, .ez-admin-shell input, .ez-admin-shell select,
+.ez-manager-shell input, .ez-manager-shell select, .ez-delivery-shell input, .ez-delivery-shell select {
+  background: #301A45 !important; color: #F5ECFA !important; border-color: #5B3974 !important;
+}
+.ez-customer-shell input::placeholder, .ez-admin-shell input::placeholder, .ez-manager-shell input::placeholder, .ez-delivery-shell input::placeholder { color: #C6ABD7 !important; }
+.ez-customer-shell button, .ez-admin-shell button, .ez-manager-shell button, .ez-delivery-shell button { transition: background .18s ease, transform .18s ease, box-shadow .18s ease; }
+.ez-customer-shell button:hover, .ez-admin-shell button:hover, .ez-manager-shell button:hover, .ez-delivery-shell button:hover { transform: translateY(-1px); }
+.ez-customer-shell [style*="background: rgb(255"], .ez-admin-shell [style*="background: rgb(255"], .ez-manager-shell [style*="background: rgb(255"], .ez-delivery-shell [style*="background: rgb(255"] { background: #2B1740 !important; }
+/* Authentication is intentionally a visual continuation of the homepage, not a light form template. */
+.auth-panel { background: #190D24 !important; color: #F5ECFA !important; }
+.auth-card { color: #F5ECFA !important; }
+.auth-card h2 { color: #F5ECFA !important; font-family: 'Fraunces', Georgia, serif !important; }
+.auth-card .field label { color: #D9C4E7 !important; }
+.auth-card .field input, .auth-card .field select { background: #301A45 !important; color: #F5ECFA !important; border: 1px solid #5B3974 !important; border-radius: 10px !important; }
+.auth-card .field input::placeholder { color: #C6ABD7 !important; }
+.auth-card .role-tabs { background: #2B1740 !important; border-color: #4B2E62 !important; }
+.auth-card .role-tab { color: #C1A9D0 !important; }
+.auth-card .role-tab.active { background: #6D36A0 !important; color: #fff !important; }
+.auth-card .demo-hint { background: #2B1740 !important; border-color: #5B3974 !important; color: #C1A9D0 !important; }
+.auth-card .demo-hint code { background: #43205B !important; color: #F5ECFA !important; }
+.auth-card .switch-line { color: #C1A9D0 !important; }
+.auth-card .switch-line a { color: #F3A45B !important; }
+/* Eazypezy landing and dedicated browse/detail pages — shared purple identity */
+.ez-subpage .ez-home-header{background:#1d1029;border-color:#38214d}
+.ez-restaurant-page,.ez-food-detail-page{max-width:1180px;margin:0 auto;padding:30px clamp(16px,4vw,48px) 60px}
+.restaurant-cover{position:relative;min-height:320px;border-radius:22px;overflow:hidden;background:#2b1740;border:1px solid #52316a;margin-bottom:24px}
+.restaurant-cover>img{width:100%;height:320px;object-fit:cover;display:block}
+.restaurant-cover-shade{position:absolute;inset:0;padding:35px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(0deg,#170d20f2 0%,#170d2050 60%,transparent 100%)}
+.restaurant-cover-shade h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,5vw,48px);margin:5px 0;color:#fff}
+.restaurant-cover-shade p{color:#d5c2e4;margin:0 0 12px}.restaurant-tags{display:flex;gap:8px;flex-wrap:wrap}.restaurant-tags span{border:1px solid #79519a;background:#321b49;border-radius:99px;padding:7px 11px;color:#f3e9fa;font-size:12px}
+.restaurant-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}.restaurant-controls select{background:#301a45;color:#f5ecfa;border:1px solid #5b3974;border-radius:10px;padding:11px 14px}
+.ez-page-food-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.ez-page-food-card{background:#2a163d;border:1px solid #4a2c60;border-radius:17px;overflow:hidden;box-shadow:0 8px 20px #0002}.ez-page-food-photo{border:0;background:#301a45;padding:0;width:100%;display:block;height:190px;overflow:hidden;cursor:pointer}.ez-page-food-photo img{width:100%;height:100%;object-fit:cover;transition:transform .25s}.ez-page-food-card:hover .ez-page-food-photo img{transform:scale(1.04)}.ez-page-food-info{padding:15px}.ez-page-food-info h3{color:#f7effb;margin:8px 0 5px;font-size:17px}.ez-page-food-info p{color:#c5afd5;font-size:12px;line-height:1.55;margin:7px 0 12px}.food-veg,.food-nonveg,.food-detail-tag{font-size:10px;letter-spacing:1px;font-weight:800;color:#f3a45b}.ez-page-food-price{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.ez-page-food-price strong{font-size:17px;color:#ffad56}.ez-page-food-price button{border:0;border-radius:9px;padding:9px 13px;background:linear-gradient(110deg,#8b43b5,#f08a35);color:#fff;font-weight:800}.page-empty{padding:24px;text-align:center;color:#c3abd4}.detail-back{background:#2b1740;border:1px solid #5b3974;color:#eee4f7;border-radius:10px;padding:10px 14px;margin-bottom:18px}.food-detail-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:#26143a;border:1px solid #4b2d62;border-radius:22px;overflow:hidden;padding:18px}.food-detail-hero{width:100%;height:430px;object-fit:cover;border-radius:15px}.food-detail-copy{padding:10px 14px}.food-detail-copy h1{font-family:'Playfair Display',Georgia,serif;color:#fff;font-size:clamp(28px,4vw,42px);margin:12px 0}.food-detail-copy p{color:#d1bedf;line-height:1.7;font-size:14px}.food-detail-restaurant a{color:#f6a75f;font-weight:700}.food-detail-price{font-size:24px;font-weight:800;color:#ffad56;margin:18px 0}.detail-add{border:0;border-radius:11px;background:linear-gradient(110deg,#8b43b5,#f08a35);color:white;font-weight:800;padding:13px 20px}.detail-demo-note{font-size:11px;color:#bfa6d0;margin-top:18px}.related-food{margin-top:42px}.related-food h2{font-family:'Playfair Display',Georgia,serif;color:#f8efff;margin-bottom:18px}.page-not-found{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}.page-not-found a{color:#ffad56}.ez-customer-shell .cartButton{color:#29123c!important;background:#eadcf4!important}
+@media(max-width:800px){.ez-page-food-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.food-detail-layout{grid-template-columns:1fr}.food-detail-hero{height:270px}.restaurant-cover,.restaurant-cover>img{min-height:250px;height:250px}.restaurant-cover-shade{padding:22px}}
+@media(max-width:480px){.ez-page-food-grid{gap:10px}.ez-page-food-photo{height:145px}.ez-page-food-info{padding:11px}.restaurant-tags span{font-size:10px}.restaurant-cover-shade{padding:17px}}
+/* Final authentication overrides — Eazypezy's fixed purple/orange/cream palette */
+.auth-panel .auth-card .role-tabs{background:#241432!important;border-color:#74518D!important}
+.auth-panel .auth-card .role-tab{color:#D8C9E3!important;background:transparent!important}
+.auth-panel .auth-card .role-tab.active{background:#FF922E!important;color:#241432!important}
+.auth-panel .auth-card .field input,.auth-panel .auth-card .field select{background:#241432!important;color:#F8F0F6!important;border-color:#74518D!important}
+.auth-panel .auth-card .field input::placeholder{color:#BDAACD!important}
+.auth-panel .auth-card .field input:focus,.auth-panel .auth-card .field select:focus{border-color:#FF922E!important;box-shadow:0 0 0 3px rgba(255,146,46,.17)!important}
+.auth-panel .auth-card .switch-line{color:#D8C9E3!important}
+.auth-panel .auth-card .switch-line button,.auth-panel .auth-card .message-link{color:#FF922E!important}
+.auth-panel .auth-card .demo-hint{background:#241432!important;color:#CDB9DB!important;border-color:rgba(245,160,76,.25)!important}
+.auth-panel .auth-card .demo-hint code{background:#3B2453!important;color:#F5A04C!important}
